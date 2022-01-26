@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+}
+.container {
+	position: relative;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	perspective: 10px;
+}
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+.greeting {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 2rem;
+	font-size: 7rem;
+	color: hsla(0, 0%, 85%, 0.8);
+	transform: translateZ(-7px) scale(1.7);
+}
+
+.header-img {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transform: translateZ(-10px) scale(2);
+}
+
+.header-img-2 {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transform: translateZ(1px) scale(0.9) translateY(70%);
+	opacity: 30%;
+}
+
+.body {
+	background-color: hsl(40, 5%, 60%);
+	margin: 0;
+}
+
+.text {
+	font-size: 2rem;
+	padding: 2rem 10rem;
+	color: hsl(0, 0%, 97%);
+}
