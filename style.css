@@ -129,3 +129,18 @@ a {
 	/* parallax */
 	transform: translateZ(-25px) scale(1.25);
 }
+
+.box-4 {
+	background-color: lightskyblue;
+	height: 100%;
+	width: 100%;
+	opacity: 70%;
+
+	/* text */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* parallax */
+	transform: translateZ(-5px) scale(1.05);
+}
